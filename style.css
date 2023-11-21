@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.page-layout {
+    display: flex;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+    height: 100vh;
+    width: 40%;
+    background-image: url(/building.jpg);
+    background-position: top;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+
+}
+
+.logo-holder {
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.background-banner {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.biei-name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+.credit {
+    margin-top: auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
