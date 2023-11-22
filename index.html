@@ -9,7 +9,6 @@
 <body>
     <div class="page-layout">
         <div class="left-side">
-            <!--<img src="building.jpg" alt="Picture of Building">-->
             <div class="text-content">
                 <div class="logo-holder">
                     <img src="logo.png" alt="Company Logo">
@@ -22,31 +21,37 @@
         </div>
         <div class="right-side">
             <div class="text-form-container">
-                <h2>Create an account with Business International Enterprises Incorporated</h2>
-                <h3>Enterprise your international business today</h3>
+                <div class="create-account-header">
+                    <h2>Create an account with Business International Enterprises Incorporated</h2>
+                    <h2>Enterprise your international business today</h2>
+                </div>
                 <form action="" method="POST">
                     <fieldset>
                         <legend><h3>Synergize</h3></legend>
-                        <div class="left-form">
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name">
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="pwd" name="pwd">
-                        </div>
-                        <div class="right-form">
-                            <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name">
-                            <label for="phone-number">PHONE NUMBER</label>
-                            <input type="tel" id="phone-number" placeholder="123-555-1212" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                            <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-pwd" name="confirm-pwd">
+                        <div class="form-fields">
+                            <div class="left-form">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" name="first-name">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="pwd" name="pwd">
+                            </div>
+                            <div class="right-form">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name">
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="tel" id="phone-number" placeholder="123-555-1212" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm-pwd" name="confirm-pwd">
+                            </div>
                         </div>
                     </fieldset>
                 </form>
                 <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="">Log in</a></p>
+                <div class="already-have-account">
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
             </div>
         </div>
     </div>
