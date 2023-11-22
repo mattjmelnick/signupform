@@ -51,10 +51,109 @@ body {
     color: white;
 }
 
-a:link {
+.credit a:link, .credit a:visited {
     color: white;
 }
 
-a:visited {
+.right-side {
+    width: 60%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    width: 100%;
+}
+
+.create-account-header h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    height: 275px;
+    width: 100%;
+    filter: drop-shadow(5px 5px 5px #c0b9b9);
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+}
+
+legend {
+    font-style: italic;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.left-form, .right-form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+    color: #393e46;
+
+}
+
+input {
+    width: 50%;
+    border: 1px solid #E5E7EB;
+    padding: 5px;
+}
+
+input:active, input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 2px 2px darkblue;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #24527a;
     color: white;
+    border: none;
+    height: 40px;
+    width: 250px;
+    margin-left: 40px;
+    filter: drop-shadow(5px 5px 5px #c0b9b9);
+}
+
+button:hover {
+    background-color: #1a2639;
+}
+
+button:active {
+    background-color: #005792;
+}
+
+.already-have-account {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: -50px;
+}
+
+.already-have-account a:link, .already-have-account a:visited {
+    color: #24527a;
 }
