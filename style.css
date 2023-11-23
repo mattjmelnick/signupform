@@ -111,19 +111,24 @@ legend {
 label {
     font-weight: 600;
     color: #393e46;
-
+    margin-top: 10px;
 }
 
 input {
     width: 50%;
     border: 1px solid #E5E7EB;
     padding: 5px;
+    margin-top: -10px;
 }
 
 input:active, input:focus {
     border: 1px solid blue;
     outline: none;
     box-shadow: 2px 2px darkblue;
+}
+
+#message {
+    margin-top: -7px;
 }
 
 button {
