@@ -35,7 +35,8 @@
                                 <label for="email">EMAIL</label>
                                 <input type="email" id="email" name="email">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="pwd" name="pwd">
+                                <input type="password" id="pwd" name="pwd" onkeyup="checkPWD();">
+                                <span id="message"></span>
                             </div>
                             <div class="right-form">
                                 <label for="last-name">LAST NAME</label>
@@ -43,7 +44,7 @@
                                 <label for="phone-number">PHONE NUMBER</label>
                                 <input type="tel" id="phone-number" placeholder="123-555-1212" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                                 <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm-pwd" name="confirm-pwd">
+                                <input type="password" id="confirm-pwd" name="confirm-pwd" onkeyup="checkPWD();">
                             </div>
                         </div>
                     </fieldset>
@@ -55,5 +56,28 @@
             </div>
         </div>
     </div>
+<script>
+    let password = document.getElementById("pwd");
+    let confirmPassword = document.getElementById("confirm-pwd");
+    let message = document.getElementById("message");
+    
+    let checkPWD = function()
+    {
+        if (password.value == "" && confirmPassword.value == "" ||
+            password.value == confirmPassword.value)
+        {
+            message.textContent = "";
+            password.style.removeProperty("border");
+            password.style.removeProperty("box-shadow");
+        }
+        else if (password.value !== confirmPassword.value)
+        {
+            message.style.color = "red";
+            message.textContent = "* Passwords do not match";
+            password.style.border = "1px solid red";
+            password.style.boxShadow = "2px 2px red";
+        }
+    }
+</script>
 </body>
 </html>
